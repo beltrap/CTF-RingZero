@@ -2,7 +2,7 @@ import sys
 import subprocess
 import pkg_resources
 
-required  = {'bs4'} 
+required  = {'bs4', 'paramiko'} 
 installed = {pkg.key for pkg in pkg_resources.working_set}
 missing   = required - installed
 
